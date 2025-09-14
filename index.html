@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Timezone Digital Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>World Clock</h1>
+            <p class="subtitle">Current time across multiple time zones</p>
+        </header>
+
+        <div class="controls">
+            <div class="timezone-selector">
+                <label for="timezone-select">Add Timezone:</label>
+                <select id="timezone-select">
+                    <option value="">Select a timezone...</option>
+                    <option value="UTC">UTC</option>
+                    <option value="America/New_York">New York</option>
+                    <option value="America/Los_Angeles">Los Angeles</option>
+                    <option value="Europe/London">London</option>
+                    <option value="Europe/Paris">Paris</option>
+                    <option value="Europe/Berlin">Berlin</option>
+                    <option value="Asia/Tokyo">Tokyo</option>
+                    <option value="Asia/Shanghai">Shanghai</option>
+                    <option value="Asia/Kolkata">Mumbai</option>
+                    <option value="Australia/Sydney">Sydney</option>
+                    <option value="Pacific/Auckland">Auckland</option>
+                </select>
+                <button id="add-timezone-btn">Add</button>
+            </div>
+            <div class="custom-timezone">
+                <input type="text" id="custom-timezone" placeholder="Enter custom timezone (e.g., Asia/Bangkok)">
+                <button id="add-custom-btn">Add Custom</button>
+            </div>
+        </div>
+
+        <div class="error-message" id="error-message"></div>
+
+        <div class="clocks-container" id="clocks-container">
+            <!-- Clock cards will be dynamically added here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
