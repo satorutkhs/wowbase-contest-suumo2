@@ -47,13 +47,13 @@ export function Footer() {
         </svg>
         事前登録
       </Link>
-      {/* お知らせ */}
-      <Link href="#" className="flex flex-col items-center text-xs text-gray-400">
+      {/* 支援団体登録 */}
+      <Link href="/support-register" className="flex flex-col items-center text-xs text-gray-400">
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z" stroke="#bdbdbd" strokeWidth="2" />
-          <path d="M12 8v4l3 3" stroke="#bdbdbd" strokeWidth="2" />
+          <path d="M12 7v5l3 3" stroke="#bdbdbd" strokeWidth="2" />
         </svg>
-        お知らせ
+        支援登録
       </Link>
       {/* メニュー */}
       <Link href="/dashboard" className="flex flex-col items-center text-xs text-gray-400">
