@@ -1,0 +1,50 @@
+[
+  {
+    "id": "p1",
+    "address": "宮城県石巻市中央1-2-3",
+    "rent": 78000,
+    "supportPrice": 15000,
+    "floorPlan": "2DK",
+    "photos": ["/images/p1_1.jpg", "/images/p1_2.jpg"],
+    "lat": 38.4345,
+    "lng": 141.3023,
+    "owner": {
+      "name": "佐藤不動産",
+      "contact": "owner1@example.com"
+    },
+    "equipment": ["Wi-Fi", "エアコン", "洗濯機", "簡易ベッド"],
+    "ownerMessage": "復興支援の方にぜひ活用いただきたい物件です。"
+  },
+  {
+    "id": "p2",
+    "address": "岩手県陸前高田市高田町4-5-6",
+    "rent": 65000,
+    "supportPrice": 10000,
+    "floorPlan": "1LDK",
+    "photos": ["/images/p2_1.jpg"],
+    "lat": 39.0142,
+    "lng": 141.6259,
+    "owner": {
+      "name": "高田開発",
+      "contact": "owner2@example.com"
+    },
+    "equipment": ["Wi-Fi", "冷蔵庫", "電子レンジ"],
+    "ownerMessage": "短期滞在もご相談ください。"
+  },
+  {
+    "id": "p3",
+    "address": "福島県南相馬市原町区7-8-9",
+    "rent": 82000,
+    "supportPrice": 12000,
+    "floorPlan": "3DK",
+    "photos": ["/images/p3_1.jpg", "/images/p3_2.jpg", "/images/p3_3.jpg"],
+    "lat": 37.6428,
+    "lng": 140.9575,
+    "owner": {
+      "name": "南相馬ホーム",
+      "contact": "owner3@example.com"
+    },
+    "equipment": ["Wi-Fi", "エアコン", "布団", "調理器具"],
+    "ownerMessage": "複数人での利用に適しています。"
+  }
+]

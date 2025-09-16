@@ -25,7 +25,7 @@ export function Footer() {
   return (
     <footer className="w-full bg-white border-t flex justify-between items-center px-2 py-1 fixed bottom-0 left-0 z-50 max-w-md mx-auto">
       {/* ホーム */}
-      <Link href="#" className="flex flex-col items-center text-xs text-[#8cc63f]">
+      <Link href="/" className="flex flex-col items-center text-xs text-[#8cc63f]">
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
           <path d="M3 12l9-9 9 9" stroke="#8cc63f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
           <path d="M9 21V9h6v12" stroke="#8cc63f" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -33,7 +33,7 @@ export function Footer() {
         ホーム
       </Link>
       {/* 物件検索 */}
-      <Link href="#" className="flex flex-col items-center text-xs text-gray-400">
+      <Link href="/search" className="flex flex-col items-center text-xs text-gray-400">
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
           <circle cx="11" cy="11" r="8" stroke="#bdbdbd" strokeWidth="2" />
           <line x1="18" y1="18" x2="22" y2="22" stroke="#bdbdbd" strokeWidth="2" strokeLinecap="round" />
@@ -41,7 +41,7 @@ export function Footer() {
         物件検索
       </Link>
       {/* 事前登録 */}
-      <Link href="#" className="flex flex-col items-center text-xs text-gray-400">
+      <Link href="/register" className="flex flex-col items-center text-xs text-gray-400">
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
           <rect x="4" y="4" width="16" height="16" rx="2" stroke="#bdbdbd" strokeWidth="2" />
           <path d="M12 8v8M8 12h8" stroke="#bdbdbd" strokeWidth="2" strokeLinecap="round" />
@@ -57,12 +57,12 @@ export function Footer() {
         お知らせ
       </Link>
       {/* メニュー */}
-      <Link href="#" className="flex flex-col items-center text-xs text-gray-400">
+      <Link href="/dashboard" className="flex flex-col items-center text-xs text-gray-400">
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="10" stroke="#bdbdbd" strokeWidth="2" />
           <path d="M8 12h8M12 8v8" stroke="#bdbdbd" strokeWidth="2" strokeLinecap="round" />
         </svg>
-        メニュー
+        マイ物件
       </Link>
     </footer>
   );
