@@ -22,7 +22,7 @@ export function Header() {
 
 export function Footer() {
   return (
-    <footer className="w-full bg-white border-t flex justify-between items-center px-2 py-1 fixed bottom-0 left-0 z-50 max-w-md mx-auto">
+    <footer className="fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-md bg-white border-t flex justify-between items-center px-2 py-1 pb-[calc(env(safe-area-inset-bottom)+4px)] z-50 shadow-sm rounded-t-xl">
       {/* ホーム */}
       <Link href="/" className="flex flex-col items-center text-xs text-[#8cc63f]">
         <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
