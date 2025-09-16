@@ -1,13 +1,13 @@
 [
   {
     "id": "p1",
-    "address": "宮城県石巻市中央1-2-3",
+    "address": "熊本県八代市本町1-2-3",
     "rent": 78000,
     "supportPrice": 15000,
     "floorPlan": "2DK",
     "photos": ["/images/p1_1.jpg", "/images/p1_2.jpg"],
-    "lat": 38.4345,
-    "lng": 141.3023,
+    "lat": 32.5075,
+    "lng": 130.6014,
     "owner": {
       "name": "佐藤不動産",
       "contact": "owner1@example.com"
@@ -17,13 +17,13 @@
   },
   {
     "id": "p2",
-    "address": "岩手県陸前高田市高田町4-5-6",
+    "address": "熊本県八代市松江城町4-5-6",
     "rent": 65000,
     "supportPrice": 10000,
     "floorPlan": "1LDK",
     "photos": ["/images/p2_1.jpg"],
-    "lat": 39.0142,
-    "lng": 141.6259,
+    "lat": 32.5032,
+    "lng": 130.6086,
     "owner": {
       "name": "高田開発",
       "contact": "owner2@example.com"
@@ -33,13 +33,13 @@
   },
   {
     "id": "p3",
-    "address": "福島県南相馬市原町区7-8-9",
+    "address": "熊本県八代市田中西町7-8-9",
     "rent": 82000,
     "supportPrice": 12000,
     "floorPlan": "3DK",
     "photos": ["/images/p3_1.jpg", "/images/p3_2.jpg", "/images/p3_3.jpg"],
-    "lat": 37.6428,
-    "lng": 140.9575,
+    "lat": 32.5110,
+    "lng": 130.5930,
     "owner": {
       "name": "南相馬ホーム",
       "contact": "owner3@example.com"
