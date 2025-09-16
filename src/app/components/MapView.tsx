@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect, useRef } from 'react';
-// @ts-ignore react-leaflet 型暫定
+import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 import { Property } from '@/types/property';
@@ -13,6 +12,16 @@ const defaultIcon = new L.Icon({
   iconAnchor: [12, 41],
   popupAnchor: [1, -34],
   shadowSize: [41, 41]
+});
+
+const highlightIcon = new L.Icon({
+  iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+  iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+  shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [30, 48],
+  iconAnchor: [15, 48],
+  popupAnchor: [1, -34],
+  shadowSize: [48, 48]
 });
 
 interface MapViewProps {
@@ -31,23 +40,26 @@ export const MapView: React.FC<MapViewProps> = ({ properties, highlightedId, onM
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
       />
-      {properties.map(p => (
-        <Marker
-          key={p.id}
-          position={[p.lat, p.lng]}
-          icon={defaultIcon}
-          eventHandlers={{
-            click: () => onMarkerClick?.(p.id),
-            mouseover: () => onMarkerHover?.(p.id),
-            mouseout: () => onMarkerHover?.(null)
-          }}
-        >
-          <Popup>
-            <div className="text-xs font-semibold mb-1">¥{p.supportPrice.toLocaleString()} / {p.floorPlan}</div>
-            <div className="text-[10px] max-w-[140px] leading-snug">{p.address}</div>
-          </Popup>
-        </Marker>
-      ))}
+      {properties.map(p => {
+        const icon = highlightedId === p.id ? highlightIcon : defaultIcon;
+        return (
+          <Marker
+            key={p.id}
+            position={[p.lat, p.lng]}
+            icon={icon}
+            eventHandlers={{
+              click: () => onMarkerClick?.(p.id),
+              mouseover: () => onMarkerHover?.(p.id),
+              mouseout: () => onMarkerHover?.(null)
+            }}
+          >
+            <Popup>
+              <div className="text-xs font-semibold mb-1">¥{p.supportPrice.toLocaleString()} / {p.floorPlan}</div>
+              <div className="text-[10px] max-w-[140px] leading-snug">{p.address}</div>
+            </Popup>
+          </Marker>
+        );
+      })}
     </MapContainer>
   );
 };
